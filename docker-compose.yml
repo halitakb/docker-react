@@ -7,8 +7,8 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - 'd:/docker/context/reactapp:/home/reactapp'
-      - 'd:/docker/context/node_modules:/home/reactapp/node_modules'
+      - 'd:/reactapp:/home/reactapp'
+      - 'd:/node_modules:/home/reactapp/node_modules'
     ports:
       - '3000:3000'
     environment:
