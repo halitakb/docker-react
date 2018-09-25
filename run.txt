@@ -1,1 +1,1 @@
-docker run --name reactjs -it -v d:/docker/context/reactapp:/home/reactapp -v /home/reactapp/node_modules -p 3000:3000 -e CHOKIDAR_USEPOLLING=true --rm reactapp_reactjs
+docker run --name reactjs -it -v d:/reactapp:/home/reactapp -v /home/reactapp/node_modules -p 3000:3000 -e CHOKIDAR_USEPOLLING=true --rm reactapp_reactjs
